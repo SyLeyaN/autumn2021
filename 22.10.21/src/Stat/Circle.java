@@ -1,8 +1,10 @@
 package Stat;
 
-public class Circle extends Point{
+public class Circle {
+    private Point point = new Point();
+
     public void Circle(int x,int y){
-        this.x=x;
-        this.y=y;
+        point.setX(x);
+        point.setY(y);
     }
 }
