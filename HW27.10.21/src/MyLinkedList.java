@@ -16,7 +16,7 @@ public class MyLinkedList {
         n.next=head;
         n.prev=null;
         if (head!=null){
-            head.next=n;
+            head.prev=n;
         }
         head=n;
     }
@@ -30,7 +30,7 @@ public class MyLinkedList {
             return;
         }
         while(last.next!=null){
-            last.next=last;
+            last=last.next;
         }
         last.next=n;
         n.prev=last;
