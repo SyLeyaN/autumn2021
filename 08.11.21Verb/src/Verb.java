@@ -42,4 +42,14 @@ public class Verb {
     public void setRusName(String rusName) {
         this.rusName = rusName;
     }
+
+    @Override
+    public String toString() {
+        return "Verb{" +
+                "infinitive='" + infinitive + '\'' +
+                ", pastSimple='" + pastSimple + '\'' +
+                ", pastParticiple='" + pastParticiple + '\'' +
+                ", rusName='" + rusName + '\'' +
+                '}';
+    }
 }
